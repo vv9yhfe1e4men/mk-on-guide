@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mk体育 – 快速识别赛事信息与数据服务</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #f6f3ed;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #2c2a26;
+            line-height: 1.7;
+            padding: 2rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 740px;
+            width: 100%;
+            background: #fcfaf7;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.02);
+            padding: 2.5rem 2rem 3rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.2rem;
+            color: #1d1b18;
+            border-left: 4px solid #b7a78a;
+            padding-left: 1rem;
+        }
+
+        .eyebrow {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8b8172;
+            margin-bottom: 0.5rem;
+            font-weight: 450;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            color: #5d554a;
+            margin-top: 0.5rem;
+            margin-bottom: 2.2rem;
+            border-bottom: 1px solid #e3ddd3;
+            padding-bottom: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1rem;
+        }
+
+        .intro-strong {
+            font-weight: 450;
+            color: #1f1b16;
+        }
+
+        a {
+            color: #3b6b4f;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #c2cfc0;
+            transition: color 0.15s, text-decoration-color 0.15s;
+        }
+
+        a:hover {
+            color: #1d4b34;
+            text-decoration-color: #3b6b4f;
+        }
+
+        .highlight-box {
+            background: #f3efe8;
+            border-left: 5px solid #b7a78a;
+            padding: 1.5rem 1.5rem 1.5rem 2rem;
+            margin: 2rem 0 2.2rem;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.6rem;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .pull-quote {
+            font-size: 1.15rem;
+            font-style: normal;
+            font-weight: 420;
+            color: #3a342d;
+            padding: 0.2rem 0 0.2rem 1.5rem;
+            margin: 1.8rem 0 1.8rem 1rem;
+            border-left: 3px solid #d4c9b9;
+            letter-spacing: -0.01em;
+        }
+
+        .tagline {
+            background: #eae5dc;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 450;
+            color: #403a30;
+            margin-top: 0.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-mini {
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e3ddd3;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            color: #2f2a22;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item strong {
+            font-weight: 500;
+            color: #1f1b16;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin-bottom: 0.2rem;
+            font-size: 0.95rem;
+            color: #4b453b;
+        }
+
+        .visit-note {
+            font-size: 0.95rem;
+            background: #f8f5f0;
+            padding: 1rem 1.5rem;
+            border-radius: 40px;
+            text-align: center;
+            margin-top: 2.5rem;
+            color: #2f2a22;
+            border: 1px solid #e5dfd5;
+        }
+
+        @media (max-width: 520px) {
+            body { padding: 1rem 0.75rem; }
+            .page { padding: 1.8rem 1.2rem 2.2rem; }
+            h1 { font-size: 1.8rem; padding-left: 0.8rem; }
+            .subhead { font-size: 0.95rem; }
+            .highlight-box { padding: 1.2rem 1rem 1.2rem 1.5rem; }
+            .pull-quote { margin-left: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="eyebrow"> · 快速识别指南</div>
+        <h1>mk体育：聚合赛事信息与数据服务的定位</h1>
+        <div class="subhead">用户进入网站前，往往需要几秒判断它是否能提供自己所需的内容。以下从结构、数据范围与实用性出发，梳理 <a href="https://mk-on-sports.com">mk体育</a> 的核心面貌。</div>
+
+        <p class="intro-strong">如果你在搜索栏输入“mk体育”并看到这个页面，一个自然的问题是：这里能做什么？</p>
+
+        <p>从网站命名与内容组织方式来看，<strong>mk体育</strong> 围绕体育赛事信息展开，主要覆盖实时比分、赛程、联赛数据与队伍动态。信息密度较高，页面倾向于直接展示数字与对阵，而非长篇报道。对于需要快速了解某一场比赛进程或近期赛果的用户，这种结构能减少浏览成本。</p>
+
+        <p>与部分门户式体育站不同，<strong>mk体育</strong> 的首页更接近信息面板——联赛标签、日期筛选、比分卡片是常见元素。这种设计意味着用户预期是“查数据”而非“读新闻”。如果你对某支球队的近五场表现、主客场胜率、交锋记录有需求，在这里能找到结构化的数据块。</p>
+
+        <div class="highlight-box">
+            <p>⚡ 实用提示：使用网站时，可优先关注顶部的联赛切换栏与日期选择器，它们决定了当前显示的数据范围。多数数据表支持按时间、赛事或球队筛选，无需额外跳转页面。</p>
+        </div>
+
+        <p>从内容覆盖面上看，<strong>mk体育</strong> 侧重于足球、篮球等主流职业联赛，同时包含部分杯赛与国际赛事。数据更新节奏与官方赛程基本同步，延迟在分钟级别。对于需要同时追踪多场比赛的用户，其多视图布局（列表、表格、卡片）提供了不同颗粒度的信息呈现。</p>
+
+        <div class="pull-quote">
+            “不是每个体育网站都需要长篇专栏——有时用户只需要一个干净的比分表、一个准确的赛程，以及可靠的联赛数据层级。”
+        </div>
+
+        <p>另外值得一提的是网站对移动端的适配。在手机浏览器中打开 <strong>mk体育</strong>，布局会自动压缩为单列，比分与时间仍保持可读性，筛选控件置于顶部。对于通勤或碎片时间查看赛况的场景，这一细节降低了操作阻力。</p>
+
+        <p>如果你属于以下三类用户之一，<strong>mk体育</strong> 的匹配度会较高：① 日常追踪多个联赛的资深球迷；② 需要快速查阅赛程与比分的竞猜参考者；③ 对数据表格敏感、偏好结构化信息的体育爱好者。反之，如果你更倾向于深度战术分析或视频集锦，这里可能只是补充数据的一个环节。</p>
+
+        <div class="faq-mini">
+            <h3>常见定位摘要</h3>
+            <div class="faq-item">
+                <strong>Q：这是资讯站还是数据站？</strong>
+                <p>偏重数据。首页以赛程、比分、积分表为核心，新闻或专题内容较少。适合查信息而非读文章。</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q：数据覆盖哪些联赛？</strong>
+                <p>主流足球联赛（英超、西甲、意甲、德甲、法甲、中超等）、NBA、欧洲篮球联赛，以及部分杯赛（欧冠、欧联、足协杯）。具体列表可在网站联赛选择器中查看。</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q：是否需要注册？</strong>
+                <p>基础数据浏览无需登录。部分高级筛选或自定义关注列表可能涉及账户功能，但浏览赛程与比分的核心功能保持开放。</p>
+            </div>
+        </div>
+
+        <div class="visit-note">
+            如需直接体验数据面板与联赛结构，可访问 <a href="https://mk-on-sports.com">mk体育</a> 查看实时赛程与比分界面。
+        </div>
+    </div>
+</body>
+</html>
